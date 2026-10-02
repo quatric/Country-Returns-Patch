@@ -1,0 +1,43 @@
+<wiidisc version="1">
+  <id game="SF8J01" />
+  <options>
+    <section name="Donkey Kong Country Returns">
+      <option name="Controllers" default="1">
+        <choice name="GameCube controller + Classic Controller"><patch id="cr_gc" /></choice>
+        <choice name="Classic Controller only"><patch id="cr_cc" /></choice>
+      </option>
+    </section>
+  </options>
+  <patch id="cr_gc">
+    <memory offset="0x80001820" valuefile="/CountryReturnsPatch/SF8J01_gc.bin" />
+    <memory offset="0x8038AFD0" value="4BC76850" original="9421EC60" />
+    <memory offset="0x8038B17C" value="28000009" original="28000005" />
+    <memory offset="0x8038B1F0" value="4BC76FE8" original="90190020" />
+    <memory offset="0x8038BED0" value="4BC76350" original="7C9A0214" />
+    <memory offset="0x8038BF60" value="4BC762D8" original="7C9A0214" />
+    <memory offset="0x8038D124" value="4BC7512C" original="28080001" />
+    <memory offset="0x8038D210" value="28000002" original="28000001" />
+    <memory offset="0x8038DB2C" value="02010201" original="00000000" />
+    <memory offset="0x8038DB30" value="4BC74738" original="9421FFF0" />
+    <memory offset="0x8038DBF0" value="88ACFFFC" original="38A00004" />
+    <memory offset="0x8038DC00" value="88ACFFFD" original="38A00005" />
+    <memory offset="0x804A971C" value="4BB58C24" original="90030068" />
+    <memory offset="0x804AAD90" value="4BB574E8" original="9421FFC0" />
+    <memory offset="0x804CEF50" value="4BB32954" original="9421FFF0" />
+  </patch>
+  <patch id="cr_cc">
+    <memory offset="0x80001820" valuefile="/CountryReturnsPatch/SF8J01_cc.bin" />
+    <memory offset="0x8038B17C" value="28000009" original="28000005" />
+    <memory offset="0x8038B1F0" value="4BC76630" original="90190020" />
+    <memory offset="0x8038BED0" value="4BC75998" original="7C9A0214" />
+    <memory offset="0x8038BF60" value="4BC75920" original="7C9A0214" />
+    <memory offset="0x8038D124" value="4BC74774" original="28080001" />
+    <memory offset="0x8038D210" value="28000002" original="28000001" />
+    <memory offset="0x8038DB2C" value="02010201" original="00000000" />
+    <memory offset="0x8038DB30" value="4BC73D80" original="9421FFF0" />
+    <memory offset="0x8038DBF0" value="88ACFFFC" original="38A00004" />
+    <memory offset="0x8038DC00" value="88ACFFFD" original="38A00005" />
+    <memory offset="0x804A971C" value="4BB5826C" original="90030068" />
+    <memory offset="0x804AAD90" value="4BB56B30" original="9421FFC0" />
+  </patch>
+</wiidisc>

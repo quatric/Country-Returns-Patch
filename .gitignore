@@ -1,0 +1,19 @@
+*.o
+*.bin
+!tools/prebuilt/*.bin
+!riivolution/sd/CountryReturnsPatch/*.bin
+temp.o
+temp.bin
+__pycache__/
+*.pyc
+.DS_Store
+# game dumps and test images, never committed
+dumps/
+build/
+pyinst_dist/
+*.wbfs
+*.iso
+*.dol
+*.bak
+# debug build of the pad code: the test harness feeds it
+tools/prebuilt/blobs_debug.json
