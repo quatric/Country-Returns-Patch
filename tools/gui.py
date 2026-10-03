@@ -81,7 +81,7 @@ def run_patch(image_path, gamecube, log, done):
             disc_id = read_disc_id(fst)
             if not disc_id:
                 raise RuntimeError('could not read sys/boot.bin from the extracted disc')
-            builds = [r for r in REGIONS.values() if r.game_id == disc_id]
+            builds = [r for r in REGIONS.values() if r.game_id[:4] == disc_id[:4]]
             if not builds:
                 raise RuntimeError(
                     'disc id %s is not a supported target (%s)' % (disc_id, ', '.join(
